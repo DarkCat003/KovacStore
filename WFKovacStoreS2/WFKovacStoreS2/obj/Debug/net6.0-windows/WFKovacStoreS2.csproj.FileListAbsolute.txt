@@ -1,0 +1,17 @@
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.exe
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.deps.json
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.runtimeconfig.json
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.dll
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.pdb
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.csproj.AssemblyReference.cache
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.Form1.resources
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.csproj.GenerateResource.cache
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.AssemblyInfoInputs.cache
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.AssemblyInfo.cs
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.csproj.CoreCompileInputs.cache
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.dll
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\refint\WFKovacStoreS2.dll
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.pdb
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.genruntimeconfig.cache
+E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\ref\WFKovacStoreS2.dll
