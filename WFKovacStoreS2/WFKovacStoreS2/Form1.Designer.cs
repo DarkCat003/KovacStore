@@ -28,241 +28,228 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btMostrar = new System.Windows.Forms.Button();
-            this.btIngresar = new System.Windows.Forms.Button();
-            this.mtxFecha = new System.Windows.Forms.MaskedTextBox();
-            this.mtxPrecio = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.cbxMarca = new System.Windows.Forms.ComboBox();
-            this.cbxColor = new System.Windows.Forms.ComboBox();
-            this.cbxTipo = new System.Windows.Forms.ComboBox();
-            this.txbNombre = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            btMostrar = new Button();
+            btIngresar = new Button();
+            mtxFecha = new MaskedTextBox();
+            mtxPrecio = new MaskedTextBox();
+            cbTalla = new ComboBox();
+            cbxMarca = new ComboBox();
+            cbxColor = new ComboBox();
+            cbxTipo = new ComboBox();
+            txbNombre = new TextBox();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // btMostrar
             // 
-            this.btMostrar.Location = new System.Drawing.Point(208, 415);
-            this.btMostrar.Name = "btMostrar";
-            this.btMostrar.Size = new System.Drawing.Size(94, 29);
-            this.btMostrar.TabIndex = 33;
-            this.btMostrar.Text = "Mostrar";
-            this.btMostrar.UseVisualStyleBackColor = true;
+            btMostrar.Location = new Point(208, 415);
+            btMostrar.Name = "btMostrar";
+            btMostrar.Size = new Size(94, 29);
+            btMostrar.TabIndex = 33;
+            btMostrar.Text = "Mostrar";
+            btMostrar.UseVisualStyleBackColor = true;
+            btMostrar.Click += btMostrar_Click;
             // 
             // btIngresar
             // 
-            this.btIngresar.Location = new System.Drawing.Point(78, 415);
-            this.btIngresar.Name = "btIngresar";
-            this.btIngresar.Size = new System.Drawing.Size(94, 29);
-            this.btIngresar.TabIndex = 32;
-            this.btIngresar.Text = "Ingresar";
-            this.btIngresar.UseVisualStyleBackColor = true;
+            btIngresar.Location = new Point(78, 415);
+            btIngresar.Name = "btIngresar";
+            btIngresar.Size = new Size(94, 29);
+            btIngresar.TabIndex = 32;
+            btIngresar.Text = "Ingresar";
+            btIngresar.UseVisualStyleBackColor = true;
+            btIngresar.Click += btIngresar_Click;
             // 
             // mtxFecha
             // 
-            this.mtxFecha.Location = new System.Drawing.Point(151, 352);
-            this.mtxFecha.Mask = "00/00/0000";
-            this.mtxFecha.Name = "mtxFecha";
-            this.mtxFecha.Size = new System.Drawing.Size(151, 27);
-            this.mtxFecha.TabIndex = 31;
-            this.mtxFecha.ValidatingType = typeof(System.DateTime);
+            mtxFecha.Location = new Point(151, 352);
+            mtxFecha.Mask = "00/00/0000";
+            mtxFecha.Name = "mtxFecha";
+            mtxFecha.Size = new Size(151, 27);
+            mtxFecha.TabIndex = 31;
+            mtxFecha.ValidatingType = typeof(DateTime);
+            mtxFecha.MaskInputRejected += mtxFecha_MaskInputRejected;
             // 
             // mtxPrecio
             // 
-            this.mtxPrecio.Location = new System.Drawing.Point(151, 302);
-            this.mtxPrecio.Mask = "999";
-            this.mtxPrecio.Name = "mtxPrecio";
-            this.mtxPrecio.Size = new System.Drawing.Size(151, 27);
-            this.mtxPrecio.TabIndex = 30;
+            mtxPrecio.Location = new Point(151, 302);
+            mtxPrecio.Mask = "999";
+            mtxPrecio.Name = "mtxPrecio";
+            mtxPrecio.Size = new Size(151, 27);
+            mtxPrecio.TabIndex = 30;
             // 
-            // comboBox4
+            // cbTalla
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "S",
-            "M",
-            "L"});
-            this.comboBox4.Location = new System.Drawing.Point(151, 267);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(151, 28);
-            this.comboBox4.TabIndex = 29;
+            cbTalla.FormattingEnabled = true;
+            cbTalla.Items.AddRange(new object[] { "S", "M", "L" });
+            cbTalla.Location = new Point(151, 267);
+            cbTalla.Name = "cbTalla";
+            cbTalla.Size = new Size(151, 28);
+            cbTalla.TabIndex = 29;
             // 
             // cbxMarca
             // 
-            this.cbxMarca.FormattingEnabled = true;
-            this.cbxMarca.Items.AddRange(new object[] {
-            "Addidas",
-            "Nika",
-            "Puma",
-            "Sin Marca"});
-            this.cbxMarca.Location = new System.Drawing.Point(151, 233);
-            this.cbxMarca.Name = "cbxMarca";
-            this.cbxMarca.Size = new System.Drawing.Size(151, 28);
-            this.cbxMarca.TabIndex = 28;
+            cbxMarca.FormattingEnabled = true;
+            cbxMarca.Items.AddRange(new object[] { "Addidas", "Nika", "Puma", "Sin Marca" });
+            cbxMarca.Location = new Point(151, 233);
+            cbxMarca.Name = "cbxMarca";
+            cbxMarca.Size = new Size(151, 28);
+            cbxMarca.TabIndex = 28;
             // 
             // cbxColor
             // 
-            this.cbxColor.FormattingEnabled = true;
-            this.cbxColor.Items.AddRange(new object[] {
-            "Rojo",
-            "Azul",
-            "Verde",
-            "Naranja"});
-            this.cbxColor.Location = new System.Drawing.Point(151, 199);
-            this.cbxColor.Name = "cbxColor";
-            this.cbxColor.Size = new System.Drawing.Size(151, 28);
-            this.cbxColor.TabIndex = 27;
+            cbxColor.FormattingEnabled = true;
+            cbxColor.Items.AddRange(new object[] { "Rojo", "Azul", "Verde", "Naranja" });
+            cbxColor.Location = new Point(151, 199);
+            cbxColor.Name = "cbxColor";
+            cbxColor.Size = new Size(151, 28);
+            cbxColor.TabIndex = 27;
             // 
             // cbxTipo
             // 
-            this.cbxTipo.FormattingEnabled = true;
-            this.cbxTipo.Items.AddRange(new object[] {
-            "Hoodie",
-            "Camiseta",
-            "Zapatillas",
-            "Pantalon",
-            "Gorra"});
-            this.cbxTipo.Location = new System.Drawing.Point(151, 165);
-            this.cbxTipo.Name = "cbxTipo";
-            this.cbxTipo.Size = new System.Drawing.Size(151, 28);
-            this.cbxTipo.TabIndex = 26;
+            cbxTipo.FormattingEnabled = true;
+            cbxTipo.Items.AddRange(new object[] { "Hoodie", "Camiseta", "Zapatillas", "Pantalon", "Gorra" });
+            cbxTipo.Location = new Point(151, 165);
+            cbxTipo.Name = "cbxTipo";
+            cbxTipo.Size = new Size(151, 28);
+            cbxTipo.TabIndex = 26;
             // 
             // txbNombre
             // 
-            this.txbNombre.Location = new System.Drawing.Point(151, 128);
-            this.txbNombre.Name = "txbNombre";
-            this.txbNombre.Size = new System.Drawing.Size(151, 27);
-            this.txbNombre.TabIndex = 25;
+            txbNombre.Location = new Point(151, 128);
+            txbNombre.Name = "txbNombre";
+            txbNombre.Size = new Size(151, 27);
+            txbNombre.TabIndex = 25;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Yu Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(166, 57);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(136, 43);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "KOVAC";
+            label8.AutoSize = true;
+            label8.Font = new Font("Yu Gothic", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(166, 57);
+            label8.Name = "label8";
+            label8.Size = new Size(136, 43);
+            label8.TabIndex = 24;
+            label8.Text = "KOVAC";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(70, 341);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 38);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Fecha de\r\ningreso:";
+            label7.AutoSize = true;
+            label7.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(70, 341);
+            label7.Name = "label7";
+            label7.Size = new Size(75, 38);
+            label7.TabIndex = 23;
+            label7.Text = "Fecha de\r\ningreso:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(85, 307);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 19);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Precio:";
+            label6.AutoSize = true;
+            label6.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(85, 307);
+            label6.Name = "label6";
+            label6.Size = new Size(60, 19);
+            label6.TabIndex = 22;
+            label6.Text = "Precio:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(96, 273);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 19);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Talla:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(96, 273);
+            label5.Name = "label5";
+            label5.Size = new Size(48, 19);
+            label5.TabIndex = 21;
+            label5.Text = "Talla:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(85, 239);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 19);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Marca:";
+            label4.AutoSize = true;
+            label4.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(85, 239);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 19);
+            label4.TabIndex = 20;
+            label4.Text = "Marca:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(90, 205);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 19);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Color:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(90, 205);
+            label3.Name = "label3";
+            label3.Size = new Size(53, 19);
+            label3.TabIndex = 19;
+            label3.Text = "Color:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(96, 171);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 19);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Tipo:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(96, 171);
+            label2.Name = "label2";
+            label2.Size = new Size(46, 19);
+            label2.TabIndex = 18;
+            label2.Text = "Tipo:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(71, 137);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 19);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Nombre:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(71, 137);
+            label1.Name = "label1";
+            label1.Size = new Size(73, 19);
+            label1.TabIndex = 17;
+            label1.Text = "Nombre:";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::WFKovacStoreS2.Properties.Resources.KovacLoco;
-            this.pictureBox1.Location = new System.Drawing.Point(77, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(89, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.KovacLoco;
+            pictureBox1.Location = new Point(77, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(89, 74);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 34;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 512);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btMostrar);
-            this.Controls.Add(this.btIngresar);
-            this.Controls.Add(this.mtxFecha);
-            this.Controls.Add(this.mtxPrecio);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.cbxMarca);
-            this.Controls.Add(this.cbxColor);
-            this.Controls.Add(this.cbxTipo);
-            this.Controls.Add(this.txbNombre);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(407, 512);
+            Controls.Add(pictureBox1);
+            Controls.Add(btMostrar);
+            Controls.Add(btIngresar);
+            Controls.Add(mtxFecha);
+            Controls.Add(mtxPrecio);
+            Controls.Add(cbTalla);
+            Controls.Add(cbxMarca);
+            Controls.Add(cbxColor);
+            Controls.Add(cbxTipo);
+            Controls.Add(txbNombre);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load_1;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -271,7 +258,7 @@
         private Button btIngresar;
         private MaskedTextBox mtxFecha;
         private MaskedTextBox mtxPrecio;
-        private ComboBox comboBox4;
+        private ComboBox cbTalla;
         private ComboBox cbxMarca;
         private ComboBox cbxColor;
         private ComboBox cbxTipo;
@@ -285,5 +272,43 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
+
+            /*
+            En Argentina nací
+            Tierra del Diego y Lionel
+            De los pibes de Malvinas
+            Que jamás olvidaré
+
+            No te lo puedo explicar
+            Porque no vas a entender
+            Las finales que perdimos
+            Cuantos años la lloré
+
+            Pero eso se terminó
+            Porque en el Maracaná
+            La final con los brazucas
+            La volvió a ganar papá
+
+            Muchachos
+            Ahora nos volvimos a ilusionar
+            Quiero ganar la tercera
+            Quiero ser campeón mundial
+
+            Y al Diego
+            Desde el cielo lo podemos ver
+            Con Don Diego y La Tota
+            Alentándolo a Lionel
+
+            Muchachos
+            Ahora nos volvimos a ilusionar
+            Quiero ganar la tercera
+            Quiero ser campeón mundial
+
+            Y al Diego
+            Desde el cielo lo podemos ver
+            Con Don Diego y La Tota
+            Alentándolo a Lionel, y ser campeones otra vez, y ser campeones otra vez
+            */
+
     }
 }

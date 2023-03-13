@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WFKovacStoreS2
 {
-    internal class Inventario
+    public class Inventario
     {
         /*
         Atributos:
@@ -176,7 +176,7 @@ namespace WFKovacStoreS2
                 case "FechaDeListado":
                     foreach (Item item2 in Disponibles)
                     {
-                        if (item2.Precio == Convert.ToInt32(cualidad))
+                        if (item2.FechaDeListado.Equals(cualidad))
                         {
                             aux.Add(item2);
                         }

@@ -28,92 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btActualizar = new System.Windows.Forms.Button();
-            this.btBuscar = new System.Windows.Forms.Button();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.cbxSeleccion = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtgvMostrar = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMostrar)).BeginInit();
-            this.SuspendLayout();
+            btActualizar = new Button();
+            btBuscar = new Button();
+            txtBuscar = new TextBox();
+            cbxSeleccion = new ComboBox();
+            label1 = new Label();
+            dtgvMostrar = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dtgvMostrar).BeginInit();
+            SuspendLayout();
             // 
             // btActualizar
             // 
-            this.btActualizar.Location = new System.Drawing.Point(12, 341);
-            this.btActualizar.Name = "btActualizar";
-            this.btActualizar.Size = new System.Drawing.Size(94, 29);
-            this.btActualizar.TabIndex = 11;
-            this.btActualizar.Text = "Actualizar";
-            this.btActualizar.UseVisualStyleBackColor = true;
+            btActualizar.Location = new Point(12, 341);
+            btActualizar.Name = "btActualizar";
+            btActualizar.Size = new Size(94, 29);
+            btActualizar.TabIndex = 11;
+            btActualizar.Text = "Actualizar";
+            btActualizar.UseVisualStyleBackColor = true;
+            btActualizar.Click += btActualizar_Click;
             // 
             // btBuscar
             // 
-            this.btBuscar.Location = new System.Drawing.Point(482, 377);
-            this.btBuscar.Name = "btBuscar";
-            this.btBuscar.Size = new System.Drawing.Size(94, 29);
-            this.btBuscar.TabIndex = 10;
-            this.btBuscar.Text = "Buscar";
-            this.btBuscar.UseVisualStyleBackColor = true;
+            btBuscar.Location = new Point(482, 377);
+            btBuscar.Name = "btBuscar";
+            btBuscar.Size = new Size(94, 29);
+            btBuscar.TabIndex = 10;
+            btBuscar.Text = "Buscar";
+            btBuscar.UseVisualStyleBackColor = true;
+            btBuscar.Click += btBuscar_Click;
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(351, 377);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(125, 27);
-            this.txtBuscar.TabIndex = 9;
+            txtBuscar.Location = new Point(351, 377);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(125, 27);
+            txtBuscar.TabIndex = 9;
             // 
             // cbxSeleccion
             // 
-            this.cbxSeleccion.FormattingEnabled = true;
-            this.cbxSeleccion.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.cbxSeleccion.Items.AddRange(new object[] {
-            "Nombre",
-            "Tipo",
-            "Color",
-            "Marca",
-            "Talla"});
-            this.cbxSeleccion.Location = new System.Drawing.Point(194, 376);
-            this.cbxSeleccion.Name = "cbxSeleccion";
-            this.cbxSeleccion.Size = new System.Drawing.Size(151, 28);
-            this.cbxSeleccion.TabIndex = 8;
-            this.cbxSeleccion.Text = "Seleccione . . .";
+            cbxSeleccion.FormattingEnabled = true;
+            cbxSeleccion.ImeMode = ImeMode.Off;
+            cbxSeleccion.Items.AddRange(new object[] { "Nombre", "Tipo", "Color", "Marca", "Talla" });
+            cbxSeleccion.Location = new Point(194, 376);
+            cbxSeleccion.Name = "cbxSeleccion";
+            cbxSeleccion.Size = new Size(151, 28);
+            cbxSeleccion.TabIndex = 8;
+            cbxSeleccion.Text = "Seleccione . . .";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(194, 353);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 20);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Busqueda Avanzada:";
+            label1.AutoSize = true;
+            label1.Location = new Point(194, 353);
+            label1.Name = "label1";
+            label1.Size = new Size(146, 20);
+            label1.TabIndex = 7;
+            label1.Text = "Busqueda Avanzada:";
             // 
             // dtgvMostrar
             // 
-            this.dtgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvMostrar.Location = new System.Drawing.Point(12, 44);
-            this.dtgvMostrar.Name = "dtgvMostrar";
-            this.dtgvMostrar.RowHeadersWidth = 51;
-            this.dtgvMostrar.RowTemplate.Height = 29;
-            this.dtgvMostrar.Size = new System.Drawing.Size(776, 289);
-            this.dtgvMostrar.TabIndex = 6;
+            dtgvMostrar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvMostrar.Location = new Point(12, 44);
+            dtgvMostrar.Name = "dtgvMostrar";
+            dtgvMostrar.RowHeadersWidth = 51;
+            dtgvMostrar.RowTemplate.Height = 29;
+            dtgvMostrar.Size = new Size(776, 289);
+            dtgvMostrar.TabIndex = 6;
             // 
             // Mostrar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btActualizar);
-            this.Controls.Add(this.btBuscar);
-            this.Controls.Add(this.txtBuscar);
-            this.Controls.Add(this.cbxSeleccion);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtgvMostrar);
-            this.Name = "Mostrar";
-            this.Text = "Mostrar";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMostrar)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btActualizar);
+            Controls.Add(btBuscar);
+            Controls.Add(txtBuscar);
+            Controls.Add(cbxSeleccion);
+            Controls.Add(label1);
+            Controls.Add(dtgvMostrar);
+            Name = "Mostrar";
+            Text = "Mostrar";
+            Load += Mostrar_Load;
+            ((System.ComponentModel.ISupportInitialize)dtgvMostrar).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

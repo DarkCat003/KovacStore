@@ -14,10 +14,10 @@ namespace WFKovacStoreS2
         public string Marca { set; get; }
         public string Talla { set; get; }
         public int Precio { set; get; }
-        public int FechaDeListado { set; get; }
+        public string FechaDeListado { set; get; }
         public Item() { }
 
-        public Item(string nombre, string tipo, string color, string marca, string talla, int precio, int fechaDeListado)
+        public Item(string nombre, string tipo, string color, string marca, string talla, int precio, string fechaDeListado)
         {
             Nombre = nombre;
             Tipo = tipo;
