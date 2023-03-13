@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "E:\\Programas\\Visual Studio\\Tools\\NuGetPackages": {}
+    "C:\\Users\\ang12\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programas\\GitHub\\KovacStore\\WFKovacStoreS2\\WFKovacStoreS2\\WFKovacStoreS2.csproj",
+      "projectUniqueName": "C:\\Users\\ang12\\Source\\Repos\\KovacStore\\WFKovacStoreS2\\WFKovacStoreS2\\WFKovacStoreS2.csproj",
       "projectName": "WFKovacStoreS2",
-      "projectPath": "E:\\Programas\\GitHub\\KovacStore\\WFKovacStoreS2\\WFKovacStoreS2\\WFKovacStoreS2.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "E:\\Programas\\GitHub\\KovacStore\\WFKovacStoreS2\\WFKovacStoreS2\\obj\\",
+      "projectPath": "C:\\Users\\ang12\\Source\\Repos\\KovacStore\\WFKovacStoreS2\\WFKovacStoreS2\\WFKovacStoreS2.csproj",
+      "packagesPath": "C:\\Users\\ang12\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ang12\\Source\\Repos\\KovacStore\\WFKovacStoreS2\\WFKovacStoreS2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Programas\\Visual Studio\\Tools\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ang12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -70,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
