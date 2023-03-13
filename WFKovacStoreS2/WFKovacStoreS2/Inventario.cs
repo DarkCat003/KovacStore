@@ -10,22 +10,29 @@ namespace WFKovacStoreS2
     {
         /*
         Atributos:
-            Una lista de items que se encuentren en la tienda
-            Una lista de items que se encuentren reservados
-
+            Una lista de items que se encuentren en la tienda **(listo)**
+            Una lista de items que se encuentren reservados **(listo)**
+            
         Aqui se puede: 
             -Buscar si un item esta disponible o reservado; 
-                                                **(revisar)**
+                    -añadir a disponibles **(listo)** [Rgregar()]
+                    -añadir a reservados **(listo)** [Reservar()]
+                    -comprobar las unidades disponibles **(listo)** [ComprobarUnidades()]
+                    -trasladar de reservados a disponibles **(listo)** [CambiarDisponibilidad()]
+                                                
             -Buscar items por una unica cualidad
-                                                **(pendiente)**
-            -Marcar un item como reservado o disponible; 
-                                                **(revisar)**
+                                                **(listo)**
+                                                
+            -Marcar un item como reservado o disponible;
+                                                **(listo)**
+                                                
             -Comprar un item disponible (porque va a estar dificil pedir 
                                         la comprobacion para comprar 
-                                        desde reservacion)
+                                        desde reservacion) **(listo)**
          */
-        List<Item> Disponibles { set; get; }
-        List<Item> Reservados { set; get; }
+        public List<Item> Disponibles { set; get; }
+        public List<Item> Reservados { set; get; }
+
         public Inventario() 
         {
             Disponibles = new List<Item>();
@@ -40,6 +47,34 @@ namespace WFKovacStoreS2
         public void Reservar(Item item)
         {
             Reservados.Add(item);
+        }
+
+        public int ComprobarUnidades(Item item, string lugar)
+        {
+            //Revisa si hay suficientes unidades de cierto objeto dependiendo
+            //el lugar de busqueda
+            List<Item> aux = new List<Item>();
+            if (lugar.Equals("Reservados"))
+            {
+                foreach (Item buscar in Reservados)
+                {
+                    if (buscar == item)
+                    {
+                        aux.Add(buscar);
+                    }
+                }
+            }
+            else
+            {
+                foreach (Item buscar in Disponibles)
+                {
+                    if (buscar == item)
+                    {
+                        aux.Add(buscar);
+                    }
+                }
+            }
+            return aux.Count();
         }
 
         public List<Item> BuscarPorObjeto(Item item, string lugar)
@@ -68,34 +103,91 @@ namespace WFKovacStoreS2
                 }
             }
             return aux;
-        }
-      
-        public int ComprobarUnidades(Item item, string lugar)
+        } 
+
+        public List<Item> BuscarPorCualidad(string seleccion, string cualidad)
         {
-            //Revisa si hay suficientes unidades de cierto objeto dependiendo
-            //el lugar de busqueda
-            List<Item> aux = new List<Item>(); 
-            if(lugar.Equals("Reservados"))
+            //Recibe un parametro de busqueda y la cualidad a buscar en la lista
+            //Devuelve una lista con los elementos encontrados
+            //Caso contrario devuelve un mensaje de error
+            List<Item> aux = new List<Item>();
+            switch(seleccion)
             {
-                foreach(Item buscar in Reservados)
-                {
-                    if(buscar == item)
+                case "Nombre":
+                    foreach (Item item2 in Disponibles)
                     {
-                        aux.Add(buscar);
+                        if (item2.Nombre.Equals(cualidad))
+                        {
+                            aux.Add(item2);
+                        }
                     }
-                }
-            }
-            else
-            {
-                foreach (Item buscar in Disponibles)
-                {
-                    if (buscar == item)
+                    break;
+
+                case "Tipo":
+                    foreach (Item item2 in Disponibles)
                     {
-                        aux.Add(buscar);
+                        if (item2.Tipo.Equals(cualidad))
+                        {
+                            aux.Add(item2);
+                        }
                     }
-                }
+                    break;
+
+                case "Color":
+                    foreach (Item item2 in Disponibles)
+                    {
+                        if (item2.Color.Equals(cualidad))
+                        {
+                            aux.Add(item2);
+                        }
+                    }
+                    break;
+
+                case "Marca":
+                    foreach (Item item2 in Disponibles)
+                    {
+                        if (item2.Marca.Equals(cualidad))
+                        {
+                            aux.Add(item2);
+                        }
+                    }
+                    break;
+
+                case "Talla":
+                    foreach (Item item2 in Disponibles)
+                    {
+                        if (item2.Talla.Equals(cualidad))
+                        {
+                            aux.Add(item2);
+                        }
+                    }
+                    break;
+
+                case "Precio":
+                    foreach (Item item2 in Disponibles)
+                    {
+                        if (item2.Precio == Convert.ToInt32(cualidad))
+                        {
+                            aux.Add(item2);
+                        }
+                    }
+                    break;
+
+                case "FechaDeListado":
+                    foreach (Item item2 in Disponibles)
+                    {
+                        if (item2.Precio == Convert.ToInt32(cualidad))
+                        {
+                            aux.Add(item2);
+                        }
+                    }
+                    break;
+
+                default:
+                    MessageBox.Show("No se encontraron elementos disponibles con esa cualidad");
+                    break;
             }
-            return aux.Count();
+            return aux;
         }
 
         public void CambiarDisponibilidad(Item item, string lugar, int cantidad)
@@ -138,12 +230,11 @@ namespace WFKovacStoreS2
                 }
             }
         }
-
         
         public void Comprar(Item item, int cantidad)
         {
             //Recibe un objeto guia y una cantidad
-            //remueve de la lista disponibles los objetos que coincidan 
+            //remueve de la lista disponibles los objetos que coincidan
             //acorde a la cantidad
             if(ComprobarUnidades(item, "Disponibles") >= cantidad)
             {

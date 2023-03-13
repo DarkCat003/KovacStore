@@ -15,3 +15,20 @@ E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStore
 E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.pdb
 E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.genruntimeconfig.cache
 E:\Programas\Visual Studio\Repositories\KovacStoreS2\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\ref\WFKovacStoreS2.dll
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.exe
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.deps.json
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.runtimeconfig.json
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.dll
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\bin\Debug\net6.0-windows\WFKovacStoreS2.pdb
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.csproj.AssemblyReference.cache
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.Form1.resources
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.csproj.GenerateResource.cache
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.AssemblyInfoInputs.cache
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.AssemblyInfo.cs
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.csproj.CoreCompileInputs.cache
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.dll
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\refint\WFKovacStoreS2.dll
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.pdb
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\WFKovacStoreS2.genruntimeconfig.cache
+E:\Programas\GitHub\KovacStore\WFKovacStoreS2\WFKovacStoreS2\obj\Debug\net6.0-windows\ref\WFKovacStoreS2.dll
